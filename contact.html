@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - Green Earth Irrigation & Gardening Services</title>
+<style>
+  :root {
+    --green-light: #a8d5ba;
+    --green-main: #2e7d32;
+    --green-dark: #145214;
+    --text-dark: #214214;
+    --text-light: #f4f9f4;
+    --bg-light: #f0f8f5;
+    --input-bg: #e6f0e6;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding-bottom: 3rem;
+  }
+
+  header {
+    background: var(--green-main);
+    color: var(--text-light);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  nav a:hover, nav a:focus {
+    background: var(--green-dark);
+  }
+  header h1 {
+    margin: 0 0 0.3rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    border-bottom: 3px solid var(--green-main);
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--green-dark);
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    color: var(--green-main);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    margin: 0 0 1rem 1.4rem;
+    font-size: 1.1rem;
+  }
+
+  form {
+    background: white;
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: var(--green-dark);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1.5px solid var(--green-light);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: var(--green-main);
+    outline: none;
+    background-color: #f4fbf4;
+  }
+
+  button[type="submit"] {
+    background-color: var(--green-main);
+    color: var(--text-light);
+    border: none;
+    border-radius: 7px;
+    padding: 0.65rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: var(--green-dark);
+    outline: none;
+  }
+
+  .contact-info {
+    margin-top: 1rem;
+    background: var(--green-light);
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .faq {
+    margin-top: 2rem;
+    background: var(--green-light);
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .faq h3 {
+    margin-top: 0;
+  }
+
+  .faq dt {
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .faq dd {
+    margin: 0 0 1rem 1.2rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--green-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+  }
+
+  footer address {
+    font-style: normal;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    main {
+      margin: 1rem auto;
+      padding: 0 0.7rem;
+    }
+    footer {
+      font-size: 0.85rem;
+      padding: 0.8rem 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Green Earth Irrigation & Gardening Services</h1>
+  <p>Your Partner in Sustainable Garden and Irrigation Solutions</p>
+</header>
+
+<main>
+  <h2>Contact Us</h2>
+
+  <p>We value your feedback, questions, and requests at Green Earth Irrigation & Gardening Services. Whether you want to inquire about our services, request a quote, or need support with your existing irrigation or gardening solutions, we are here to help. Reach out to us through any of the methods below or visit our office to speak directly with one of our dedicated team members.</p>
+
+  <section class="contact-info" tabindex="0">
+    <h3>Our Contact Information</h3>
+    <p><strong>Phone:</strong> <a href="tel:+1234567890" style="color: var(--green-dark); text-decoration: underline;">(123) 456-7890</a></p>
+    <p><strong>Email:</strong> <a href="mailto:info@greenearthgarden.com" style="color: var(--green-dark); text-decoration: underline;">info@greenearthgarden.com</a></p>
+    <p><strong>Office Address:</strong><br />
+      Green Earth Irrigation & Gardening Services<br />
+      123 Greenway Drive,<br />
+      Springfield, State 45678
+    </p>
+    <p><strong>Business Hours:</strong><br />
+      Monday - Friday: 8:00 AM – 6:00 PM<br />
+      Saturday: 9:00 AM – 2:00 PM<br />
+      Sunday: Closed
+    </p>
+  </section>
+
+  <section>
+    <h3>Get in Touch Using the Contact Form</h3>
+    <p>If you prefer to write to us directly, please fill out the contact form below. To help us respond promptly and accurately, kindly provide detailed information about your inquiry or service needs.</p>
+
+    <form action="#" method="POST" aria-label="Contact form">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Optional" />
+
+      <label for="subject">Subject *</label>
+      <input type="text" id="subject" name="subject" required placeholder="Inquiry subject" />
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section class="faq" tabindex="0" aria-label="Frequently Asked Questions">
+    <h3>Frequently Asked Questions</h3>
+
+    <dl>
+      <dt>How soon will I receive a response after contacting you?</dt>
+      <dd>Our team strives to respond to all inquiries within 24-48 hours during business days. For urgent matters, calling us directly by phone is recommended.</dd>
+
+      <dt>Can I schedule a consultation or site visit?</dt>
+      <dd>Yes, we offer consultations and site visits to assess your irrigation or gardening needs. Please contact us to schedule an appointment.</dd>
+
+      <dt>What areas do you serve?</dt>
+      <dd>We primarily serve Springfield and surrounding counties. Contact us for more specific location details.</dd>
+
+      <dt>Do you offer emergency repair services?</dt>
+      <dd>Yes, emergency irrigation repair is available for urgent leaks or system failures. Please call our phone number for immediate assistance.</dd>
+
+      <dt>How do I get a quote for your services?</dt>
+      <dd>You can request a detailed quote through our contact form or by calling us. We usually schedule a site visit for accurate estimates.</dd>
+
+      <dt>Are your gardening and irrigation services environmentally friendly?</dt>
+      <dd>Absolutely. Sustainability and water conservation are core values for Green Earth. We use eco-friendly methods and materials whenever possible.</dd>
+    </dl>
+  </section>
+
+  <section aria-label="Additional information about contacting Green Earth" tabindex="0">
+    <h3>Additional Information</h3>
+    <p>Customer satisfaction is our priority. When you contact us, expect courteous, professional, and knowledgeable service tailored to your needs.</p>
+    <p>We maintain strict privacy and confidentiality regarding any personal information you share with us. Please see our <a href="privacy.html" style="color: var(--green-main);">Privacy Policy</a> for more details.</p>
+    <p>For better service, please provide as much detail as possible in your messages. If applicable, attach photos or descriptions of irrigation systems or garden areas needing care.</p>
+    <p>We welcome your feedback to continuously improve our services. Whether you wish to share compliments, concerns, or suggestions, your input helps us grow.</p>
+    <p>Thank you for choosing Green Earth Irrigation & Gardening Services. We look forward to connecting with you!</p>
+  </section>
+</main>
+
+<footer>
+  <address>
+    Green Earth Irrigation & Gardening Services | 123 Greenway Drive, Springfield, State 45678 | Phone: <a href="tel:+1234567890" style="color: var(--text-light); text-decoration: underline;">(123) 456-7890</a>
+  </address>
+</footer>
+
+</body>
+</html>
