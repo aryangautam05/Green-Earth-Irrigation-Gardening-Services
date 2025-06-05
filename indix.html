@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Green Earth Irrigation & Gardening Services</title>
+<style>
+  :root {
+    --green-light: #a8d5ba;
+    --green-main: #2e7d32;
+    --green-dark: #145214;
+    --text-dark: #214214;
+    --text-light: #f4f9f4;
+    --bg-light: #f0f8f5;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--green-main);
+    color: var(--text-light);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    margin: 0 0 0.3rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    margin: 0 0.3rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  nav a:hover, nav a:focus {
+    background: var(--green-dark);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    border-bottom: 3px solid var(--green-main);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--green-dark);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    white-space: pre-line;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    flex: 1 1 320px;
+    padding: 1rem 1rem 1.8rem;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover, .service-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  }
+
+  .service-card h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    color: var(--green-main);
+  }
+
+  .service-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green-dark);
+    margin-top: auto;
+  }
+
+  .service-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .customer-satisfaction, .disclaimer {
+    background: var(--green-light);
+    padding: 1.8rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    background: var(--green-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+
+    .services {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Green Earth Irrigation & Gardening Services</h1>
+  <p>Your Partner in Sustainable Garden and Irrigation Solutions</p>
+  <nav aria-label="Primary navigation">
+    <a href="#about">About Us</a>
+    <a href="#services">Services & Pricing</a>
+    <a href="#customer-satisfaction">Customer Satisfaction</a>
+    <a href="#disclaimer">Disclaimer</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Green Earth</h2>
+    <p class="about-text">
+      At Green Earth Irrigation & Gardening Services, we believe that a healthy, thriving garden is one of life's great pleasures. Founded over a decade ago, our company has grown from a local landscaping service into a trusted name in sustainable irrigation and garden care. We specialize in custom-tailored solutions to suit your unique garden environment, from residential backyard sanctuaries to commercial green spaces.
+      
+      Our dedicated team of horticulture experts and irrigation specialists is passionate about creating and maintaining gardens that not only look stunning but are environmentally responsible and water-efficient. We combine the latest technology with proven gardening techniques to ensure that every leaf, every flower, and every blade of grass flourishes under our care.
+
+      Whether you are dreaming of lush landscapes, efficient irrigation systems, or sustainable gardening practices, Green Earth is your partner in nurturing nature while reducing waste. Our mission is to enhance the beauty and health of your garden while safeguarding precious natural resources.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services & Pricing</h2>
+
+    <div class="services">
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s1.jpg" alt="Irrigation system design plan" />
+        <h3>Custom Irrigation System Design</h3>
+        <p>We create efficient irrigation layouts tailored to your landscape, ensuring optimal water distribution to healthy plants and lawns.</p>
+        <p class="service-price">$350 - $700 (depending on property size)</p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s2.jpg" alt="Installing sprinkler irrigation system" />
+        <h3>Irrigation System Installation</h3>
+        <p>Professional installation of drip systems, sprinklers, and rainwater harvesting solutions with quality components for longevity.</p>
+        <p class="service-price">$500 - $1,200</p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s3.jpg" alt="Gardener pruning and maintaining garden" />
+        <h3>Garden Maintenance & Care</h3>
+        <p>Seasonal garden care including pruning, mulching, fertilization, pest control, and lawn maintenance for vibrant growth.</p>
+        <p class="service-price">Starting at $150 monthly</p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s4.jpg" alt="Landscape design drawing with plant layout" />
+        <h3>Landscape Design Consultation</h3>
+        <p>Expert advice on plant selection, layout, soil improvement, and sustainable practices to bring your dream garden to life.</p>
+        <p class="service-price">$200 per consultation</p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s5.jpg" alt="Close-up of plant leaves with water droplets" />
+        <h3>Water Conservation Audits</h3>
+        <p>Evaluation of your current irrigation for efficiency improvements that save water and reduce utility bills.</p>
+        <p class="service-price">$150 per audit</p>
+      </article>
+
+      <article class="service-card" tabindex="0">
+        <img class="service-img" src="s6.jpg" alt="Repairing irrigation sprinkler head" />
+        <h3>Emergency Irrigation Repair</h3>
+        <p>Fast response service to fix leaks, broken sprinkler heads, and damaged pipes to avoid water waste and plant damage.</p>
+        <p class="service-price">$100 minimum + parts</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="customer-satisfaction" class="customer-satisfaction" tabindex="0">
+    <h2>Customer Satisfaction</h2>
+    <p>At Green Earth, our clients’ satisfaction is our highest priority. We are proud to maintain a reputation for professionalism, attention to detail, and exceptional service quality. Our team works tirelessly to exceed your expectations, ensuring your garden remains healthy, beautiful, and perfectly irrigated year-round.</p>
+    
+    <p>Don’t just take our word for it! Here's what some of our valued customers have to say:</p>
+    <blockquote style="font-style: italic; color: var(--green-dark);">
+      “Green Earth transformed my backyard into a green paradise. Their irrigation system saves me water every month!” - Samantha R.<br />
+      “Responsive, knowledgeable, and friendly service. Highly recommend for all your gardening needs.” - Mark L.<br />
+      “Professional and affordable gardening care that truly shows in my flourishing flowers and lawn.” - Priya K.
+    </blockquote>
+  </section>
+
+  <section id="disclaimer" class="disclaimer" tabindex="0" aria-label="Disclaimer">
+    <h2>Disclaimer</h2>
+    <p>
+      Green Earth Irrigation & Gardening Services makes every effort to provide up-to-date and accurate information on this website about our services and pricing. However, the content is for general informational purposes only and is subject to change without notice. Prices may vary depending on site conditions, material costs, and individual client requirements.
+    </p>
+    <p>
+      Full quotations will be provided after site visits and consultations. Services are subject to availability and seasonal scheduling. Green Earth is not responsible for any unintended damages or losses resulting from the use of our products or services beyond the agreed work scope. We encourage clients to discuss any concerns or specific needs during consultations.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <address>
+    Green Earth Irrigation & Gardening Services<br />
+    123 Greenway Drive, Springfield, State 45678<br />
+    Phone: <a href="tel:+1234567890" style="color: var(--text-light); text-decoration: underline;">(123) 456-7890</a><br />
+    Email: <a href="mailto:info@greenearthgarden.com" style="color: var(--text-light); text-decoration: underline;">info@greenearthgarden.com</a>
+  </address>
+  <p>© 2024 Green Earth Irrigation & Gardening Services. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
